@@ -4,11 +4,11 @@
 #include <string.h>
 #include <unistd.h>
 
-int process, lenM, lenK;
+unsigned short process, lenM, lenK;
 char message[1000], key[1000];
 
 void processing (void) {
-  scanf("%d", &process);
+  scanf("%hd", &process);
   switch (process) {
     //Generazione chiave
     case 1: printf("Generazione della chiave...\n\n");
